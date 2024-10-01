@@ -4,24 +4,19 @@ html{
 }
 
 #title {
-  height: 50px;
-  top:100px;
+  height: auto;
   background-color: lightsteelblue;
-  padding: 10px;
   margin: 5px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  overflow-x: hidden;
-  overflow-y: auto;
-  vertical-align: middle;
+  padding-top: 0px;
 }
 
 #searchBars{
-  height: 100px;
-  top:100px;
+  height: auto;
   background-color: lightgray;
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
   border-width: 1px;
   border-style: solid;
@@ -29,10 +24,10 @@ html{
 }
 
 #outputArea {
-  top:100px;
   background-color: lightgray;
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
+  display: none;
   border-width: 1px;
   border-style: solid;
   border-color: black;
