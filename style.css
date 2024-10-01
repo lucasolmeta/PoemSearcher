@@ -3,38 +3,18 @@ html{
   width: 100%;
 }
 
-#outputArea {
-  background-color: lightgray;
-  top:200px;
-  padding-left: 10px;
+#title {
+  height: 50px;
+  top:100px;
+  background-color: lightsteelblue;
+  padding: 10px;
+  margin: 5px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
-  margin-top: 7px;
-  padding-top: 5px;
-}
-
-#title {
-  position: fixed;
-  top: 0px;
-  height:80px;
-  padding-left: 10px;
-  padding-top: 0px;
-  margin-top: 5px;
-  line-height: 10px;
-  width:100%;
-  background-color: lightsteelblue;
-  vertical-align: top;
   overflow-x: hidden;
   overflow-y: auto;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-}
-
-#undertitle{
-  height: 80px;
-  top: 0px;
+  vertical-align: middle;
 }
 
 #searchBars{
@@ -42,10 +22,18 @@ html{
   top:100px;
   background-color: lightgray;
   padding: 10px;
-  line-height: 10px;
-  margin-top: 4px;
+  margin: 5px;
   border-width: 1px;
   border-style: solid;
   border-color: black;
 }
 
+#outputArea {
+  top:100px;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}

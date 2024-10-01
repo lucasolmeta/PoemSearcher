@@ -17,6 +17,9 @@ function getAuthor(url){
   .then( res => res.json ())
   .then(
     function(data){
+      
+      document.getElementById("outputArea").style.display = 'visible';
+
       if(data.length==undefined){
         document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
       } else if(data.length==1){
@@ -48,6 +51,9 @@ function getTitle(url){
   .then( res => res.json ())
   .then(
     function(data){
+
+      document.getElementById("outputArea").style.display = 'visible';
+
       if(data.length==undefined){
         document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
       } else if(data.length==1){
