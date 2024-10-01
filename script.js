@@ -23,16 +23,16 @@ function getAuthor(url){
       if(data.length==undefined){
         document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
       } else if(data.length==1){
-        document.getElementById("outputArea").innerHTML = "1 Poem Found" + "<br>" + "<br>"; 
+        document.getElementById("outputArea").innerHTML = "<b>1 Poem Found</b>" + "<br>" + "<br>"; 
       } else {
-        document.getElementById("outputArea").innerHTML = data.length + " Poems Found" + "<br>" + "<br>";
+        document.getElementById("outputArea").innerHTML = "<b>" + data.length + " Poems Found</b>" + "<br>" + "<br>";
 
       let answer = "";
       for(let poem of data){
         answer += "<hr>";
-        answer += " <b> Title:  </b>" + poem.title + "<br>";
-        answer += " <b> Author:  </b>" + poem.author + "<br>";
-        answer += "<b> Poem: </b>" + "<br>";
+        answer += " <b>Title:  </b>" + poem.title + "<br>";
+        answer += " <b>Author:  </b>" + poem.author + "<br>";
+        answer += "<b>Poem: </b>" + "<br>";
 
         for(let line of poem.lines){
           answer += line + "<br>";
@@ -57,17 +57,17 @@ function getTitle(url){
       if(data.length==undefined){
         document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
       } else if(data.length==1){
-        document.getElementById("outputArea").innerHTML = "1 Poem Found" + "<br>" + "<br>"; 
+        document.getElementById("outputArea").innerHTML = "<b>1 Poem Found</b>" + "<br>" + "<br>"; 
       } else {
-        document.getElementById("outputArea").innerHTML = data.length + " Poems Found" + "<br>" + "<br>"; 
+        document.getElementById("outputArea").innerHTML = "<b>" + data.length + " Poems Found</b>" + "<br>" + "<br>"; 
       }
 
       let answer = "";
       for(let poem of data){
         answer += "<hr>";
-        answer += "<b> Title:  </b>" + poem.title + "<br>";
-        answer += " <b> Author:  </b>" + poem.author + "<br>";
-        answer += " <b> Poem: </b>" + "<br>";
+        answer += "<b>Title:  </b>" + poem.title + "<br>";
+        answer += " <b>Author:  </b>" + poem.author + "<br>";
+        answer += " <b>Poem: </b>" + "<br>";
 
         for(let line of poem.lines){
           answer += line + "<br>";
