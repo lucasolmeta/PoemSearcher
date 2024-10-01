@@ -1,13 +1,13 @@
 function authorSubmitted(){
   let url = "https://poetrydb.org/author/";
-  let authorName =document.getElementById("inputArea").value;
+  let authorName =document.getElementById("inputAuthor").value;
   url += authorName;
   getAuthor(url);
 }
 
 function titleSubmitted(){
   let url = "https://poetrydb.org/title/";
-  let titleName = document.getElementById("inputArea2").value;
+  let titleName = document.getElementById("inputTitle").value;
   url += titleName;
   getTitle(url);
 }
@@ -17,8 +17,8 @@ function getAuthor(url){
   .then( res => res.json ())
   .then(
     function(data){
-      
-      document.getElementById("outputArea").style.display = 'visible';
+
+      document.getElementById("outputArea").style.display = 'block';
 
       if(data.length==undefined){
         document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
@@ -52,7 +52,7 @@ function getTitle(url){
   .then(
     function(data){
 
-      document.getElementById("outputArea").style.display = 'visible';
+      document.getElementById("outputArea").style.display = 'block';
 
       if(data.length==undefined){
         document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 

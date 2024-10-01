@@ -10,21 +10,21 @@
   </head>
   
   <body>
-    <section id="title">
-      <h1>Poem Searcher
-      <br><i>By: Lucas Olmeta</i></h1>
-    </section>
+    <div id = "header">
+      <div>Poem Searcher</div>
+      <a href = "http://linkedin.com/in/lolmeta" target="_blank"><img id = "linkedIn" src = "linkedIn.png"></a>
+    </div>
 
-    <section id="searchBars">      
-      <input type="text" id="inputArea" value="Enter Author Name">
+    <section id="searchArea">      
+      <input type="text" id="inputAuthor" class="textInput">
       <br>
-      <input type="button" value="Search by Author"       
+      <input type="button" class="button" value="Search by Author"       
       onclick="authorSubmitted()" id="submitButton">
       <br>
       <br>
-      <input type="text" id="inputArea2" value="Enter Poem Title">
+      <input type="text" id="inputTitle" class="textInput">
       <br>
-      <input type="button" value="Search by Title" 
+      <input type="button" class="button" value="Search by Title" 
       onclick="titleSubmitted()" id="submitButton2">
       <br>
     </section>
