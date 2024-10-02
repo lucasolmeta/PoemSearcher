@@ -21,7 +21,7 @@ function getAuthor(url){
       document.getElementById("outputArea").style.display = 'block';
 
       if(data.length==undefined){
-        document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
+        document.getElementById("outputArea").innerHTML = "No Poems Found" + "<br>" + "<br>"; 
       } else if(data.length==1){
         document.getElementById("outputArea").innerHTML = "<b>1 Poem Found</b>" + "<br>" + "<br>"; 
       } else {
@@ -55,7 +55,7 @@ function getTitle(url){
       document.getElementById("outputArea").style.display = 'block';
 
       if(data.length==undefined){
-        document.getElementById("outputArea").innerHTML = "No Poems Were Found" + "<br>" + "<br>"; 
+        document.getElementById("outputArea").innerHTML = "No Poems Found" + "<br>" + "<br>"; 
       } else if(data.length==1){
         document.getElementById("outputArea").innerHTML = "<b>1 Poem Found</b>" + "<br>" + "<br>"; 
       } else {
