@@ -32,10 +32,10 @@ function getAuthor(url){
         answer += "<hr>";
         answer += " <b>Title:  </b>" + poem.title + "<br>";
         answer += " <b>Author:  </b>" + poem.author + "<br>";
-        answer += "<b>Poem: </b>" + "<br>";
+        answer += "<b>Poem: </b>" + "<br><br>";
 
         for(let line of poem.lines){
-          answer += line + "<br>";
+          answer += "<i>" + line + "</i><br>";
         }
 
         answer += "<br>";
