@@ -2,27 +2,17 @@ function authorSubmitted(){
   let url = "https://poetrydb.org/author/";
   let authorName =document.getElementById("inputAuthor").value;
   url += authorName;
-  getAuthor(url);
+  fetchData(url);
 }
 
 function titleSubmitted(){
   let url = "https://poetrydb.org/title/";
   let titleName = document.getElementById("inputTitle").value;
   url += titleName;
-  getTitle(url);
+  fetchData(url);
 }
 
-function getAuthor(url){
-  fetch(url)
-  .then( res => res.json ())
-  .then(
-    function(data){
-      displayData(data);
-    }
-  )
-}
-
-function getTitle(url){
+function fetchData(url){
   fetch(url)
   .then( res => res.json ())
   .then(
